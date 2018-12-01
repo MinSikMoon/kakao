@@ -87,7 +87,16 @@
       <artifactId>mybatis</artifactId>
       <version>3.4.1</version>
     </dependency>
+    <dependency>
+      <groupId>com.googlecode.json-simple</groupId>
+      <artifactId>json-simple</artifactId>
+      <version>1.1</version>
+    </dependency>
   </dependencies>
+
+
+
+
   <build>
     <finalName>qna</finalName>
     <pluginManagement>      <!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
@@ -97,7 +106,7 @@
           <configuration>
             <source>1.7</source>
             <target>1.7</target>
-            <encoding>utf-8</encoding>
+            <encoding>UTF-8</encoding>
           </configuration>
         </plugin>
         <plugin>
@@ -108,10 +117,6 @@
         <plugin>
           <artifactId>maven-resources-plugin</artifactId>
           <version>3.0.2</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.7.0</version>
         </plugin>
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
